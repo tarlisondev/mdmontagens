@@ -152,7 +152,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // WhatsApp integration
 document.querySelector('.btn-whatsapp').addEventListener('click', function() {
-    const phoneNumber = '5511999999999'; // Replace with actual WhatsApp number
+    const phoneNumber = '5598970255090'; // Replace with actual WhatsApp number
     const message = encodeURIComponent('Olá! Gostaria de solicitar um orçamento para montagem/desmontagem de móveis.');
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(whatsappUrl, '_blank');
@@ -233,4 +233,5 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
         showNotification('Solicitação enviada com sucesso! Entraremos em contato em breve.', 'success');
         this.reset();
     }, 2000);
+
 });
