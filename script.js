@@ -235,3 +235,4 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     }, 2000);
 
 });
+
