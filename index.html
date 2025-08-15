@@ -206,22 +206,22 @@
                             <div class="form-row">
                                 <div class="form-group">
                                     <label>Nome</label>
-                                    <input type="text" placeholder="Seu nome completo" required>
+                                    <input type="text" placeholder="Seu nome completo" id="name" required>
                                 </div>
                                 <div class="form-group">
                                     <label>Telefone</label>
-                                    <input type="tel" placeholder="(11) 99999-9999" required>
+                                    <input type="tel" placeholder="(11) 99999-9999" id="tel" required>
                                 </div>
                             </div>
                             
                             <div class="form-group">
                                 <label>E-mail</label>
-                                <input type="email" placeholder="seu@email.com" required>
+                                <input type="email" placeholder="seu@email.com" id="email" required>
                             </div>
                             
                             <div class="form-group">
                                 <label>Tipo de Serviço</label>
-                                <select required>
+                                <select id="service" required>
                                     <option value="">Selecione o serviço</option>
                                     <option value="residencial">Montagem de móveis residenciais</option>
                                     <option value="corporativo">Montagem de móveis corporativos</option>
@@ -232,7 +232,7 @@
                             
                             <div class="form-group">
                                 <label>Descrição do Serviço</label>
-                                <textarea placeholder="Descreva quais móveis precisam ser montados/desmontados..." rows="4" required></textarea>
+                                <textarea placeholder="Descreva quais móveis precisam ser montados/desmontados..." rows="4" id="desc" required></textarea>
                             </div>
                             
                             <button type="submit" class="btn btn-cta btn-full">Enviar Solicitação</button>
@@ -368,6 +368,7 @@
 </body>
 
 </html>
+
 
 
 
