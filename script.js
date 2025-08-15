@@ -158,6 +158,28 @@ document.querySelector('.btn-whatsapp').addEventListener('click', function() {
     window.open(whatsappUrl, '_blank');
 });
 
+// WhatsApp integration
+document.querySelector('#btn-service').addEventListener('click', function() {
+    const phoneNumber = '5598970255090'; // Replace with actual WhatsApp number
+    const name = document.querySelector('#name').value;
+     const tel = document.querySelector('#tel').value;
+     const email = document.querySelector('#email').value;
+     const service = document.querySelector('#service').value;
+     const desc = document.querySelector('#desc').value;
+    
+    const message = encodeURIComponent(`
+    =======Atendimento========= \n
+    Nome: ${name}, \n
+    Tel: ${tel}, \n
+    Email: ${email}, \n
+    Serviço: ${service}, \n
+    Descrição: ${desc}
+    
+    `);
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
+    window.open(whatsappUrl, '_blank');
+});
+
 // CTA button actions
 document.querySelectorAll('.btn-cta, .btn-hero').forEach(button => {
     if (button.textContent.includes('Orçamento')) {
@@ -235,4 +257,5 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     }, 2000);
 
 });
+
 
